@@ -1,6 +1,6 @@
 (ns leiningen.artifact
   (:use 
-    [leiningen.jar :only (jar)]
+    [leiningen.install :only (install)]
     [leiningen.ring.war :only (war)]
     [leiningen.ring.uberwar :only (uberwar)]))
 
