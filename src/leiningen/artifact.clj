@@ -4,9 +4,7 @@
     [leiningen.ring.war :only (war)]
     [leiningen.ring.uberwar :only (uberwar)]))
 
-(defn artifact
-  "I don't do a lot."
-  [project & args]
+(defn artifact [project & args]
   (if-let [artifact (-> project :ring :artifact)]
     (let [project (update-in project
                              [:ring :web-xml]
